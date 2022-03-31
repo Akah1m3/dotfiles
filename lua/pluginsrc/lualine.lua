@@ -1,3 +1,10 @@
+local branch = {
+	"branch",
+	icons_enabled = true,
+	icon = "",
+}
+
+
 require('lualine').setup {
   options = {
     icons_enabled = true,
