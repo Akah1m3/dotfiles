@@ -1,6 +1,6 @@
 vim.cmd([[
 try
-  colorscheme gruvbox-material
+  colorscheme catppuccin_macchiato
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark

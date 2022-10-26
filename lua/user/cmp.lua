@@ -110,6 +110,9 @@ cmp.setup {
       return vim_item
     end,
   },
+  windowr = {
+    documentation = cmp.config.window.bordered(),
+  },
   sources = {
     { name = "nvim_lsp" },
     { name = "nvim_lua" },
@@ -121,15 +124,11 @@ cmp.setup {
     behavior = cmp.ConfirmBehavior.Replace,
     select = false,
   },
-  documentation = {
-    border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-  },
   experimental = {
     ghost_text = false,
     native_menu = false,
   },
 }
-
 -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline('/', {
   sources = {

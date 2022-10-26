@@ -54,6 +54,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lua"
 
   use "sainnhe/gruvbox-material" -- colorscheme
+  use 'catppuccin/vim'
 
   use {
     'nvim-lualine/lualine.nvim',
@@ -98,6 +99,10 @@ return packer.startup(function(use)
   -- Bufferline
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
+
+  -- Git diff viewver
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+  -- Git diff viewver end
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
